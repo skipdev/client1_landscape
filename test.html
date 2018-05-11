@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>A Responsive Off Canvas CSS Menu</title>
+    <meta content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0" name="viewport">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+<link href="css/testimonial_bubbles.css" rel="stylesheet" type="text/css" />
+    <title>Testimonials</title>
+</head>
+<body>
+<div class="testimonials-out">
+  <div class="testimonials">
+    <div id="testimonials" class="owl-carousel">
+      <div class="item">
+        <p>Lorem ipsum dolor sit amet, consecteturadipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <div class="author-cont"> <img src="images/tim-cook.jpg" alt="photo" />
+          <div class="name">1</div>
+          <div class="position">Apple/CEO</div>
+        </div>
+      </div>
+      <div class="item">
+        <p>Lorem ipsum dolor sit amet, consecteturadipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <div class="author-cont"> <img src="images/tim-cook.jpg" alt="photo" />
+          <div class="name">2</div>
+          <div class="position">Apple/CEO</div>
+        </div>
+      </div>
+      <div class="item">
+        <p>Lorem ipsum dolor sit amet, consecteturadipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <div class="author-cont"> <img src="images/tim-cook.jpg" alt="photo" />
+          <div class="name">3</div>
+          <div class="position">Apple/CEO</div>
+        </div>
+      </div>
+      <div class="item">
+        <p>Lorem ipsum dolor sit amet, consecteturadipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <div class="author-cont"> <img src="images/tim-cook.jpg" alt="photo" />
+          <div class="name">4</div>
+          <div class="position">Apple/CEO</div>
+        </div>
+      </div>
+      <div class="item">
+        <p>Lorem ipsum dolor sit amet, consecteturadipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <div class="author-cont"> <img src="images/tim-cook.jpg" alt="photo" />
+          <div class="name">5</div>
+          <div class="position">Apple/CEO</div>
+        </div>
+      </div>
+      <div class="item">
+        <p>Lorem ipsum dolor sit amet, consecteturadipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <div class="author-cont"> <img src="images/tim-cook.jpg" alt="photo" />
+          <div class="name">6</div>
+          <div class="position">Apple/CEO</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/owl.carousel.js"></script>
+<script>
+$(document).ready(function() {
+	$('#testimonials').owlCarousel({
+		loop: true,
+		margin: 0,
+		nav: true,
+		dots: true,
+		responsive:{
+			0:{
+				items: 1
+			},
+			480:{
+				items: 1
+			},
+			768:{
+				items: 2
+			},
+			992:{
+				items: 2
+			},
+			1200:{
+				items: 3
+			}
+		}
+	});	
+});
+</script>
+</script>
+
+</body>
+</html>
