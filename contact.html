@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/form-elements.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>Contact</title>
 </head>
 
@@ -34,27 +39,45 @@
 </sidebar>
 
 <div id="contact-form">
-  <form name="contact">
-    <label for="name">Name</label>
-    <input type="text" id="name" name="name" onblur="blurName()" required placeholder="* Name...">
-    <br>
-    <br>
-    <br>
-    <label for="email">Email</label> 
-    <input type="email" id="email" name="email" onblur="blurEmail()" required placeholder="* Email...">
-    <br>
-    <br>
-    <br>
-    <label for="phone">Phone</label>
-    <input type="text" id="phone" name="phone" onblur="blurPhone()" placeholder="Phone... (optional)">
-    <br>
-    <br>
-    <br>
-    <label for="subject">Message</label>
-    <textarea id="message" name="subject" onblur="blurMessage()" required placeholder="* Write something..."></textarea>
-    <p></p>
-    <input id="send" name="send" type="submit" value="Submit">
-  </form>
+<div class="top-content">
+    <div class="inner-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-sm-offset-3 form-box">
+                	<div class="form-top">
+                		<div class="form-top-left">
+                			<h3>Contact us</h3>
+                    		<p>Fill in the form below to send us a message:</p>
+                		</div>
+                		<div class="form-top-right">
+                			<i class="fa fa-envelope"></i>
+                		</div>
+                    </div>
+                    <div class="form-bottom contact-form">
+                  <form role="form" action="assets/contact.php" method="post">
+                  	<div class="form-group">
+                  		<label class="sr-only" for="contact-email">Email</label>
+                      	<input type="text" name="email" placeholder="Email..." class="contact-email form-control" id="contact-email">
+                      </div>
+                      <br>
+                      <div class="form-group">
+                      	<label class="sr-only" for="contact-subject">Subject</label>
+                      	<input type="text" name="subject" placeholder="Subject..." class="contact-subject form-control" id="contact-subject">
+                      </div>
+                      <br>
+                      <div class="form-group">
+                      	<label class="sr-only" for="contact-message">Message</label>
+                      	<textarea name="message" placeholder="Message..." class="contact-message form-control" id="contact-message"></textarea>
+                      </div>
+                      <br>
+                      <button type="submit" class="btn">Send message</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+</div>
 </div> <!-- end contact form -->
 
 <section id="footer">
@@ -62,5 +85,11 @@
     </footer>
 </section> <!-- end footer -->
 
+<script src="assets/js/jquery-1.11.1.min.js"></script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/js/jquery.backstretch.min.js"></script>
+<script src="assets/js/retina-1.1.0.min.js"></script>
+<script src="assets/js/scripts.js"></script>
+        
 </body>
 </html>
