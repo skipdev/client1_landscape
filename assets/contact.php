@@ -10,12 +10,17 @@ if($_POST) {
     // Enter the email where you want to receive the message
     $emailTo = 'stephyx.web@gmail.com';
 
+    $name = addslashes(trim($_POST['name']));
     $clientEmail = addslashes(trim($_POST['email']));
     $subject = addslashes(trim($_POST['subject']));
     $message = addslashes(trim($_POST['message']));
 
-    $array = array('emailMessage' => '', 'subjectMessage' => '', 'messageMessage' => '');
+    $array = array('nameMessage' => '', 'emailMessage' => '', 'subjectMessage' => '', 'messageMessage' => '');
 
+    
+    if($name == '') {
+        $array['subjectname'] = 'Empty name!';
+    }
     if(!isEmail($clientEmail)) {
         $array['emailMessage'] = 'Invalid email!';
     }
@@ -25,9 +30,9 @@ if($_POST) {
     if($message == '') {
         $array['messageMessage'] = 'Empty message!';
     }
-    if(isEmail($clientEmail) && $subject != '' && $message != '') {
+    if($name != '' && isEmail($clientEmail) && $subject != '' && $message != '') {
         // Send email
-		$headers = "From: " . $clientEmail . " <" . $clientEmail . ">" . "\r\n" . "Reply-To: " . $clientEmail;
+		$headers = "From: " . $name . " - " . $clientEmail . " <" . $clientEmail . ">" . "\r\n" . "Reply-To: " . $clientEmail;
 		mail($emailTo, $subject . " (bootstrap contact form)", $message, $headers);
     }
 

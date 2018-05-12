@@ -8,9 +8,7 @@
     <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/form-elements.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Contact</title>
@@ -44,6 +42,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-6 col-sm-offset-3 form-box">
+                    
                 	<div class="form-top">
                 		<div class="form-top-left">
                 			<h3>Contact us</h3>
@@ -53,26 +52,31 @@
                 			<i class="fa fa-envelope"></i>
                 		</div>
                     </div>
+                    
                     <div class="form-bottom contact-form">
-                  <form role="form" action="assets/contact.php" method="post">
-                  	<div class="form-group">
-                  		<label class="sr-only" for="contact-email">Email</label>
-                      	<input type="text" name="email" placeholder="Email..." class="contact-email form-control" id="contact-email">
-                      </div>
-                      <br>
-                      <div class="form-group">
-                      	<label class="sr-only" for="contact-subject">Subject</label>
-                      	<input type="text" name="subject" placeholder="Subject..." class="contact-subject form-control" id="contact-subject">
-                      </div>
-                      <br>
-                      <div class="form-group">
-                      	<label class="sr-only" for="contact-message">Message</label>
-                      	<textarea name="message" placeholder="Message..." class="contact-message form-control" id="contact-message"></textarea>
-                      </div>
-                      <br>
-                      <button type="submit" class="btn">Send message</button>
-                  </form>
-                </div>
+                      <form role="form" action="assets/contact.php" method="post">
+                          <div class="form-group">
+                      		<label class="sr-only" for="contact-name">Name</label>
+                          	<input type="text" name="name" placeholder="Name..." class="contact-name form-control" id="contact-name">
+                          </div>
+                      	<div class="form-group">
+                      		<label class="sr-only" for="contact-email">Email</label>
+                          	<input type="text" name="email" placeholder="Email..." class="contact-email form-control" id="contact-email">
+                          </div>
+                          <br>
+                          <div class="form-group">
+                          	<label class="sr-only" for="contact-subject">Subject</label>
+                          	<input type="text" name="subject" placeholder="Subject..." class="contact-subject form-control" id="contact-subject">
+                          </div>
+                          <br>
+                          <div class="form-group">
+                          	<label class="sr-only" for="contact-message">Message</label>
+                          	<textarea name="message" placeholder="Message..." class="contact-message form-control" id="contact-message"></textarea>
+                          </div>
+                          <br>
+                          <button type="submit" class="btn">Send message</button>
+                      </form>
+                    </div>
               </div>
             </div>
         </div>
