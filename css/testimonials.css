@@ -11,7 +11,7 @@ sidebar {
 #image {
     grid-row: 1 / span 6;
     grid-column: 1 / span 5;
-    z-index: -1;
+    z-index: -2;
 }
 
 #image img {
@@ -23,6 +23,7 @@ sidebar {
     grid-row: 1 / span 6;
     grid-column: 1 / span 5;
     background-color: rgba(0, 0, 0, 0.4);
+    z-index: -2;
 }
 
 .testimonials-out {

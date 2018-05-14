@@ -18,7 +18,7 @@ body {
 .topnav {
   overflow: hidden;
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: 100;
+  z-index: 1000;
 }
     .topnav a {
         margin-left: 5%;
@@ -111,8 +111,8 @@ body {
 
 @media screen and (max-width: 600px) {
     .topnav {
-        background-color: rgba(0, 0, 0, 0.7);
-        padding: 3vh;
+        background-color: rgba(0, 0, 0, 0.8);
+        padding: 4vh;
     }
     .topnav li:not(:first-child) {display: none;}
     .topnav li:first-child {
