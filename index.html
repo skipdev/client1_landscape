@@ -22,16 +22,31 @@
 <div id="op"></div>
 
 <sidebar>
-    <nav class="nav-bar">
-      <ul>
-        <li class="active">HOME</li>
-        <li><a href="services.html">SERVICES</a></li>
-        <li><a href="photos.html">PHOTOS</a></li>
-        <li><a href="testimonials.html">TESTIMONIALS</a></li>
-        <li><a href="contact.html">CONTACT</a></li>
-      </ul>
-    </nav>
+<nav class="topnav" id="myTopnav">
+    <ul>
+  <li><a class="active">HOME</a><li>
+  <li id="ser"><a href="services.html">SERVICES</a><li>
+  <li><a href="photos.html">PHOTOS</a><li>
+  <li><a href="testimonials.html">TESTIMONIALS</a><li>
+  <li><a href="contact.html">CONTACT</a><li>
+     </ul>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i><li>
+  </a>
+</nav>
 </sidebar>
+
+  
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
 
 <div id="text1">QUALITY LANDSCAPING</div>
 <div id="text2">DESIGNED WITH <span id="you">YOU</span> IN MIND</div>

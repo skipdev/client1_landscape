@@ -54,3 +54,38 @@ sidebar {
     line-height: 18px;
 }
 }
+
+@media (min-width: 1526px) {
+    .topnav {
+      overflow: hidden;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+    .topnav a {
+        margin-left: 5%;
+        text-decoration: none;
+    }
+    .topnav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        vertical-align: center;
+        padding-top: 5vh;
+        margin-left: 25vw;
+        margin-right: 25vw;
+    }
+    
+    .topnav ul li {
+        color: white;
+        text-decoration: none;
+        text-align: center;
+        font-weight: bold;
+        font-size: 15px;
+        display: inline;
+        list-style-type: none;
+        padding: 1.2%;
+    }
+    .topnav .icon {
+      display: none;
+    }
+}

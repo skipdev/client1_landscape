@@ -6,8 +6,8 @@ body {
 sidebar {
     grid-row: 1;
     grid-column: 1 / span 3;
-    background-color: rgba(0, 0, 0, 0.5);
 }
+
 
 #image {
     grid-row: 1 / span 5;
