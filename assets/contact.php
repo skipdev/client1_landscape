@@ -33,7 +33,7 @@ if($_POST) {
     if($name != '' && isEmail($clientEmail) && $subject != '' && $message != '') {
         // Send email
 		$headers = "From: " . $name . " - " . $clientEmail . " <" . $clientEmail . ">" . "\r\n" . "Reply-To: " . $clientEmail;
-		mail($emailTo, $subject . " (bootstrap contact form)", $message, $headers);
+		mail($emailTo, $subject, $message, $headers);
     }
 
     echo json_encode($array);

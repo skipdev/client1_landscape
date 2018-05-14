@@ -69,5 +69,29 @@ margin-right: 5%;
 
 #footer {
     background-color: #78AA57;
+    color: rgba(255, 255, 255, 0.6);
     text-align: center;
 }
+
+#footer p {
+    margin-left: 1vw;
+    margin-right: 1vw;
+    font-size: 12px;
+}
+
+    #foot1, #slash, #foot2 {
+        text-align: left;
+        float: left;
+    }
+    #foot3  {
+        text-align: right;
+        float: right;
+    }
+    
+        #foot3 a, a:visited {
+            color: rgba(255, 255, 255, 0.6);
+        }
+        
+        #foot3 a:hover {
+            color: rgba(255, 255, 255, 0.3);
+        }
