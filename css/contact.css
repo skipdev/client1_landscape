@@ -1,6 +1,6 @@
 body {
   grid-template-columns: 20vw 60vw 20vw;
-  grid-template-rows: 15vh 25vh 50vh 25vh 5vh 5vh;
+  grid-template-rows: 15vh 20vh 30vh 25vh 25vh 5vh;
 }
 
 sidebar {
@@ -67,4 +67,18 @@ input[type=submit] {
 #footer {
     grid-row: 6;
     grid-column: 1 / span 3;
+}
+
+@media (min-width: 1000px) {
+    body {
+      grid-template-columns: 20vw 60vw 20vw;
+      grid-template-rows: 15vh 25vh 25vh 25vh 5vh 5vh;
+    }
+}
+
+@media (max-width: 1000px) {
+    body {
+      grid-template-columns: 20vw 60vw 20vw;
+      grid-template-rows: 15vh 25vh 50vh 40vh 5vh 5vh;
+    }
 }

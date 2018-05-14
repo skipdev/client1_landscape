@@ -19,7 +19,7 @@ sidebar {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-nav ul {
+.nav-bar ul {
 list-style-type: none;
 margin: 0;
 padding: 0;
@@ -29,23 +29,24 @@ margin-left: 5%;
 margin-right: 5%;
 }
 
-    nav ul li {
+    .nav-bar ul li {
         color: white;
         display: inline;
         list-style-type: none;
         padding: 2%;
         font-weight: bold;
+        font-size: 16px;
     }
     
-    nav ul .active {
+    .nav-bar ul .active {
         color: darkgrey;
     }
     
-    nav a:hover {
+    .nav-bar a:hover {
         color: darkgrey;
         
     }
-    nav a {
+    .nav-bar a {
         color: white;
         text-decoration: none;
     }

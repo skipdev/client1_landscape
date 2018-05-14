@@ -32,7 +32,7 @@ sidebar {
 }
 
 #footer {
-    grid-row: 6;
+    grid-row: 6 / span 2;
     grid-column: 1 / span 3;
 }
 
