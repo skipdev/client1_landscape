@@ -18,10 +18,12 @@ body {
 .topnav {
   overflow: hidden;
   background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100;
 }
     .topnav a {
         margin-left: 5%;
         text-decoration: none;
+        color: white;
     }
     .topnav ul {
         list-style-type: none;
@@ -36,6 +38,10 @@ body {
     
     .topnav li .active {
         color: darkgrey;
+    }
+    
+    .topnav a:visited {
+        color: white;
     }
     
     .topnav a:hover {
