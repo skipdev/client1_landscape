@@ -67,6 +67,7 @@ sidebar {
 .icons, .text {
     color: white;
     text-align: center;
+    overflow: scroll;
 }
 
 .text {
